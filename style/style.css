@@ -1,0 +1,281 @@
+body{
+	background:url('../images/grey_wash_wall.png') 0px 0px repeat;
+	color: #fff;
+	font-family: sans-serif;
+}
+.container{
+	width: 960px;
+	margin: 0px auto;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+	color: #C9C9C9;
+}
+header h1{
+	color: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+main{
+	height: 550px;
+	display: inline-block;
+	font-size: 0;
+}
+
+.menu{
+	height: 100%;
+	width: 250px;
+	background-color: #fff;
+	display: inline-block;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	vertical-align: top;
+}
+.menu a{
+	text-decoration: none;
+}
+.menu-item{
+	height: 110px;
+	width: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	padding: 30px 20px;
+}
+
+.title{
+	color: #000;
+	font-size: 24px;
+}
+.subtitle{
+	color: #9E9E9E;
+	font-size: 14px;
+}
+.active{
+	-webkit-box-shadow: inset 0px 3px 4px -3px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    inset 0px 3px 4px -3px rgba(50, 50, 50, 0.75);
+	box-shadow:         inset 0px 3px 4px -3px rgba(50, 50, 50, 0.75);
+	text-shadow: 2px 0px 5px rgba(0, 0, 0, .5);
+	
+}
+.page.active{
+	-webkit-box-shadow: inset 0px 3px 4px -3px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow:    inset 0px 3px 4px -3px rgba(255, 255, 255, 0.75);
+	box-shadow:         inset 0px 3px 4px -3px rgba(255, 255, 255, 0.75);
+	display: inline-block;
+}
+
+/*removes shadow fron first menu-item*/
+.active.menu-item:first-of-type{
+	--webkit-box-shadow: inset 0px 3px 4px -3px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow:    inset 0px 3px 4px -3px rgba(255, 255, 255, 0.75);
+	box-shadow:         inset 0px 3px 4px -3px rgba(255, 255, 255, 0.75);
+}
+
+.active .title, .active .subtitle{
+	color: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~assign colors to each menu-item~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*profile*/
+.active.profile{
+	background-color: #2980b9;
+}
+/*resume*/
+.active.resume{
+	background-color: #8e44ad;
+}
+/*portfolio*/
+.active.portfolio{
+	background-color: #27ae60;
+}
+/*references*/
+.active.references{
+	background-color: #c0392b;
+}
+/*contact*/
+.active.contact{
+	background-color: #d35400;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~first page always shown at load~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.page.profile{
+	left: 0px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~pages~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content{
+	display: inline-block;
+	height: 550px;
+	width: 710px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	vertical-align: top;
+	overflow: hidden;
+	position: relative;
+}
+
+.page{
+	font-size: 0;
+	height:550px;
+	width: 710px;
+	vertical-align: top;
+	overflow: hidden;/*
+	padding: 30px 15px 15px 15px;*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	position: absolute;
+	left: -710px;
+}
+.page h1{
+	margin: 0px;
+	margin-bottom: 25px;
+}
+.page h3{
+	margin: 0px;
+	margin-bottom: 25px;
+}
+.page p{
+	line-height: 23px;
+}
+.page a {
+	border-bottom: 1px dotted #fff;
+	text-decoration: none;
+	color: #fff;
+}
+.page a:hover, .page a:active {
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}
+/*scroll*/
+.scroll{
+	height:550px;
+	width: 710px;
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 0;
+	padding: 30px 15px 15px 15px;
+}
+.scrollable.default-skin .scroll-bar.vertical{
+	width: 10px !important;
+}
+.scrollable .scroll-bar.vertical{
+	margin-right: 10px;
+}
+.scrollable.default-skin{
+	padding-right: 30px !important;
+	padding-bottom: 20px !important;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~section widths~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.full{
+	width: 100%;
+	display: inline-block;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 14px;
+	padding: 0px 2%;
+}
+.half{
+	width: 50%;
+	display: inline-block;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 14px;
+	padding: 0px 2%;
+	vertical-align: top;
+}
+.one-third{
+	width: 33.33%;
+	display: inline-block;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 14px;
+	padding: 0px 2%;
+	vertical-align: top;
+}
+.two-third{
+	width: 66.66%;
+	display: inline-block;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 14px;
+	padding: 0px 2%;
+	vertical-align: top;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~section content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*nivoSlider*/
+.slider-box{
+	border:1px solid rgba(236, 236, 236, 0.32);
+	width: 100%;
+	height: 260px;
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	padding: 10px;
+	padding-bottom: 30px;
+	}
+.nivoSlider img{
+	width: 100%;
+	height: 100%;
+}
+.nivoSlider{
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+.nivo-controlNav{
+	padding: 0px !important;
+}
+/*info list*/
+ul.info{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.info li{
+	background-color: #fff;
+	border-radius: 2px;
+	color: #000;
+	display: inline-block;
+	width: 130px;
+	box-sizing: border-box;
+	padding: 4px;
+	margin: 5px 0px;
+	vertical-align: top;
+	text-shadow:none;
+	font-weight: bold;
+}
+.info li:nth-of-type(2n){
+	text-align: right;
+	width: 172px;
+	color: #fff;
+	background-color:transparent;
+	font-size: 12px;
+	text-shadow:2px 0px 5px rgba(0, 0, 0, 0.5);
+	font-weight: normal;
+}
+/*social*/
+ul.social{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.social li{
+	width: 35px;
+	height: 35px;
+	border-radius: 20px;
+	border:solid #fff;
+	display: inline-block;
+	list-style: none;
+	box-sizing: border-box;
+	margin: 0px 2px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer{
+	/*background-image: url(images/footer_shadow.png);
+	background-repeat: no-repeat;
+	min-height: 30px;*/
+}
